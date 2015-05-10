@@ -5,6 +5,7 @@
 var Stream = require('./lib/Stream');
 var core = require('./lib/source/core');
 var from = require('./lib/source/from').from;
+var emitter = require('./lib/source/emitter');
 var periodic = require('./lib/source/periodic').periodic;
 var rest = require('lodash/array/rest');
 
@@ -20,6 +21,7 @@ exports.empty    = Stream.empty = core.empty;
 exports.never    = core.never;
 exports.from     = from;
 exports.periodic = periodic;
+exports.emitter = emitter;
 
 //-----------------------------------------------------------------------
 // Creating
