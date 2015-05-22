@@ -4,7 +4,8 @@
   "description": "Monadic streams",
   "main": "most.js",
   "scripts": {
-    "test": "jshint . && buster-test"
+	"lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "test": "buster-test"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,8 @@
   "license": "MIT",
   "devDependencies": {
     "buster": "~0.7",
-    "jshint": "~2",
+    "eslint": "^0.21.2",
+    "babel-eslint": "^3.1.7",
     "transducers-js": "^0.4.158"
   },
   "dependencies": {
