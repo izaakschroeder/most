@@ -1,6 +1,5 @@
 /test/
-.jshintrc
-.jshintignore
+.eslintrc
 .editorconfig
 .npmignore
 .idea/
